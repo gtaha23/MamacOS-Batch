@@ -12,3 +12,6 @@ v0.0.6 Update!
 Minor Bugs fixed,
 Now you can see the new version on the log command,
 see command updated!
+
+# Current Status
+Sorry for the command bugs we are currently working on it!
