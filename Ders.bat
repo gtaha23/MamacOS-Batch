@@ -16,14 +16,14 @@ goto :start
 
 :start
 echo __________________________
-echo Welcome %name%
+echo Welcome to MamacOS
 ping localhost -n 3 > nul
 echo Here is the commands
 echo - enter (opens the menu)
 echo - logs (shows the updates)
 echo - colors (change the terminal color)
 echo - fullscreen (enters the fullscreen)
-echo - version_control (checs the version)
+echo - version_control (checks the version)
 echo - see (shows the files)
 echo - exit (exits the O.S)
 echo - about (gives info about the creator team)
@@ -31,36 +31,38 @@ set /p PROGRAM= What do you want to do?:
 goto %PROGRAM%
 echo __________________________
 pause > nul
- 
+
 :enter
 set /p PASS= Enter the passcode to the menu: 
 set /a CODE=1357924680
 if %PASS%==%CODE% goto :file
+goto :start
 
 :file
 cls
 echo Entering the menu
 ping localhost -n 2 > nul
 start Menu.bat
+goto :start
 
 :logs
 cls
 echo This command shows you the updates 
 ping localhost -n 2 > nul
 echo -----------
-echo First Creation / 19.04.2024 \
+echo First Creation / 19.04.2024 
 ping localhost -n 2 > nul
-echo v0.0.1 / 21.04.2024 \
+echo v0.0.1 / 21.04.2024 
 ping localhost -n 2 > nul
-echo v0.0.2 / 26.05.2024 \
+echo v0.0.2 / 26.05.2024 
 ping localhost -n 2 > nul
-echo v0.0.3 / 12.06.2024 \
+echo v0.0.3 / 12.06.2024 
 ping localhost -n 2 > nul
-echo v0.0.4 / 13.06.2024 \
+echo v0.0.4 / 13.06.2024 
 ping localhost -n 2 > nul
-echo v0.0.5 / 13.06.2024 \
+echo v0.0.5 / 13.06.2024 
 ping localhost -n 2 > nul
-echo v0.0.6 / 13.06.2024 \
+echo v0.0.6 / 13.06.2024 
 ping localhost -n 2 > nul
 echo -----------
 pause > nul
@@ -89,7 +91,7 @@ SET TempVBSFile=%temp%\~tmpSendKeysTemp.vbs
 IF EXIST "%TempVBSFile%" DEL /F /Q "%TempVBSFile%"
 ECHO Set WshShell = WScript.CreateObject("WScript.Shell") >>"%TempVBSFile%"
 ECHO Wscript.Sleep 900                                    >>"%TempVBSFile%"
-ECHO WshShell.SendKeys "{F11}"                            >>"%TempVBSFile%
+ECHO WshShell.SendKeys "{F11}"                            >>"%TempVBSFile%"
 ECHO Wscript.Sleep 900                                    >>"%TempVBSFile%"
 
 CSCRIPT //nologo "%TempVBSFile%"
