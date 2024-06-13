@@ -1,0 +1,9 @@
+:loop
+color 0a
+echo You are currently on a loop
+ping localhost -n 3 > nul
+echo press enter to exit
+ping localhost -n 3 > nul
+echo jk you are trapped :D
+pause > nul
+goto loop
