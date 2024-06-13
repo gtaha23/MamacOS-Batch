@@ -1,3 +1,4 @@
+
 # MamacOS
 MamacOS is a fun little project for my batch skills. This is currently on moderation,
 You can download the code and try it yourself!
@@ -7,3 +8,4 @@ Me and my cousin decided to make this project today! I was originally started th
 
 # Updates
 You can see the Updates with the log command!
+
