@@ -111,6 +111,7 @@ echo Extras (folder)
 echo Ders.bat 
 echo Math.bat 
 echo Menu.bat 
+echo README.md
 echo test.txt
 echo -----------------------
 cls
