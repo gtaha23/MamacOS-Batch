@@ -16,7 +16,18 @@ echo - see (shows the files)
 echo - version_control (checs the version)
 echo -------------------------
 set /p PROGRAM= What do you want to do?:
-goto %PROGRAM%
+if /i "%PROGRAM%"=="enter" goto :enter
+if /i "%PROGRAM%"=="logs" goto :logs
+if /i "%PROGRAM%"=="colors" goto :colors
+if /i "%PROGRAM%"=="fullscreen" goto :fullscreen
+if /i "%PROGRAM%"=="version_control" goto :version_control
+if /i "%PROGRAM%"=="see" goto :see
+if /i "%PROGRAM%"=="exit" goto :exit
+if /i "%PROGRAM%"=="about" goto :about
+echo Invalid command. Please try again.
+pause > nul
+cls
+goto :start
 
 
 :create
@@ -102,6 +113,8 @@ echo v0.0.5 / 13.06.2024 \
 ping localhost -n 2 > nul
 echo v0.0.6 / 13.06.2024 \
 ping localhost -n 2 > nul
+echo v0.0.7 / 14.06.2024 \
+ping localhost -n 2 > nul
 echo -----------
 pause > nul
 cls
@@ -128,17 +141,22 @@ goto :start
 echo The files are
 echo -----------------------
 echo Extras (folder)
+ping localhost -n 2 > nul
 echo Ders.bat 
+ping localhost -n 2 > nul
 echo Math.bat 
+ping localhost -n 2 > nul
 echo Menu.bat 
+ping localhost -n 2 > nul
 echo test.txt
 echo -----------------------
+pause
 cls
 goto :start
 
 :version_control
 cls
-set /a VERSION=0.0.6
+set /a VERSION=0.0.7
 echo The version is v%VERSION%
 pause > nul
 goto :start
