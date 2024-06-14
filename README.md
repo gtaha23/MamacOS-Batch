@@ -7,11 +7,11 @@ You can download the code and try it yourself!
 Me and my cousin decided to make this project on 13/06/2024! I was originally started this project 2 months ago.
 
 # Updates
-You can see the Updates with the log command!
-v0.0.6 Update!
-Minor Bugs fixed,
-Now you can see the new version on the log command,
-see command updated!
+- v0.0.8 Update!
+- Version is now stable.
+- Major Changes commited. 
+- Big bugs fixed. 
+- Error handling created. 
 
 # Current Status
 Most of the bugs are fixed, the stable version is v0.0.8! Let us know
