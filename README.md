@@ -14,4 +14,5 @@ Now you can see the new version on the log command,
 see command updated!
 
 # Current Status
-Sorry for the command bugs we are currently working on it!
+Most of the bugs are fixed, the stable version is v0.0.8! Let us know
+if you caught a bug in the O.S
