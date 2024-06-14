@@ -1,6 +1,7 @@
 @echo off
 title MamacOS
-color %COLOR%
+color 1F
+cls
 
 :start
 echo Welcome to MamacOS-menu 
