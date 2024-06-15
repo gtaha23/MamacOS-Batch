@@ -7,12 +7,17 @@ You can download the code and try it yourself!
 Me and my cousin decided to make this project on 13/06/2024! I was originally started this project 2 months ago.
 
 # Updates
-- v0.0.8 Update!
-- Version is now stable.
-- Major Changes commited. 
-- Big bugs fixed. 
-- Error handling created. 
+- v0.0.9 Update!
+- v0.0. Series last version.
+- github_repo command added. 
+- Logs command in the menu file updated. 
+- Main file updated. 
 
 # Current Status
-Most of the bugs are fixed, the stable version is v0.0.8! Let us know
-if you caught a bug in the O.S
+v0.0.9 Update is here! v0.0. series are completed, version is stable,
+new releases will be publish soon.
+
+# Fun facts
+Why is the main file is named "Ders.bat"?
+-> Because in my first batch experiences i named it that because
+it is for my .bat lessons and it means "Work.bat" or "Lesson.bat" in english.

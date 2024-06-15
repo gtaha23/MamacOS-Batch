@@ -3,21 +3,26 @@ title MamacOS
 color 1F
 cls
 
-echo /__________________________\
+echo   --------------------------
+echo  /__________________________\
+echo / -------------------------- \
+echo \ ---- MamaCode Studios ---- /
+echo  \ ------------------------ /
+echo   -------------------------
 goto main
 
 :main
 echo Welcome to MamacOS
 ping localhost -n 3 > nul
 
-echo This Operating system is a Batch file
+echo This Operating system is still on moderation
 
 ping localhost -n 2 > nul
 goto :start
 
 :start
-echo __________________________
-echo Welcome to MamacOS
+echo _________________________
+echo *--------Welcome--------*
 ping localhost -n 3 > nul
 echo Here is the commands
 echo - enter (opens the menu)
@@ -28,6 +33,7 @@ echo - version_control (checks the version)
 echo - see (shows the files)
 echo - exit (exits the O.S)
 echo - about (gives info about the creator team)
+echo - github_repo (givesyou the repository link)
 set /p PROGRAM= What do you want to do?:
 if /i "%PROGRAM%"=="enter" goto :enter
 if /i "%PROGRAM%"=="logs" goto :logs
@@ -37,11 +43,12 @@ if /i "%PROGRAM%"=="version_control" goto :version_control
 if /i "%PROGRAM%"=="see" goto :see
 if /i "%PROGRAM%"=="exit" goto :exit
 if /i "%PROGRAM%"=="about" goto :about
+if /i "%PROGRAM%"=="github_repo" goto :github_repo
 echo Invalid command. Please try again.
 pause > nul
 cls
 goto :start
-echo __________________________
+echo _________________________
 pause > nul
 
 :enter
@@ -80,6 +87,8 @@ echo v0.0.7 / 14.06.2024 \
 ping localhost -n 2 > nul
 echo v0.0.8 / 14.06.2024 \
 ping localhost -n 2 > nul
+echo v0.0.9 / 15.06.2024 \
+ping localhost -n 2 > nul
 echo -----------
 pause > nul
 cls
@@ -116,7 +125,7 @@ cls
 goto :start
 
 :version_control
-echo The version is v0.0.8
+echo The version is v0.0.9
 pause > nul
 cls
 goto :start
@@ -152,7 +161,7 @@ echo About the creator team,
 ping localhost -n 3 > nul
 echo They are 2 cousins and they want to make an O.S,
 ping localhost -n 3 > nul
-echo Their names are Gökhan Taha and Akay Tuna,
+echo Their names are Gokhan Taha and Akay Tuna,
 ping localhost -n 3 > nul
 echo This project is on currently moderation
 ping localhost -n 3 > nul
@@ -160,4 +169,14 @@ echo Make sure to support us on github!
 echo -----------
 pause
 cls
+goto :start
+
+:github_repo
+echo The github repositorys link:
+ping localhost -n 3 > nul
+echo.
+echo https://github.com/gtaha23/MamacOS-Batch
+echo.
+pause > nul
+cls 
 goto :start

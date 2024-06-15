@@ -115,6 +115,10 @@ echo v0.0.6 / 13.06.2024 \
 ping localhost -n 2 > nul
 echo v0.0.7 / 14.06.2024 \
 ping localhost -n 2 > nul
+echo v0.0.8 / 14.06.2024 \
+ping localhost -n 2 > nul
+echo v0.0.9 / 15.06.2024 \
+ping localhost -n 2 > nul
 echo -----------
 pause > nul
 cls
@@ -156,7 +160,6 @@ goto :start
 
 :version_control
 cls
-set /a VERSION=0.0.7
-echo The version is v%VERSION%
+echo The version is v0.0.9
 pause > nul
 goto :start
