@@ -8,13 +8,13 @@ Me and my cousin decided to make this project on 13/06/2024! I was originally st
 
 # Updates
 - v0.1.0 Update!
-- v0. Series release!
+- v0.1. Series release!
 - Startup file added. 
 - Logs command in the menu file updated. 
 - Main file updated. 
 
 # Current Status
-v0.1.0 Update is here! v0. series are released, version is stable,
+v0.1.0 Update is here! v0.1. series are released, version is stable,
 new releases will be publish soon.
 
 # Fun facts
