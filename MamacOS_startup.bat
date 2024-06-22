@@ -1,6 +1,17 @@
 @echo off
 title MamacOS-Startup
 color 1F
+cls
+
+echo    --------------------------
+echo   /__________________________ \
+echo  / --------------------------  \
+echo / ----- MamaCode Studios -----  \
+echo \ ----------------------------  /
+echo  \----******Welcome******----- /
+echo   \ _________________________ /
+echo     -------------------------
+goto :main
 
 :main
 echo Looking for the OS, please wait. . .
