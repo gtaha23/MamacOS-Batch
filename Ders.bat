@@ -36,7 +36,7 @@ echo - about (gives info about the creator team)
 echo - github_repo (gives you the repository link)
 echo - oldfetch (a command that shows you the logo and the info of the OS)
 echo - code_info (gives you information of the source code)
-set /p PROGRAM= What do you want to do?:
+set /p PROGRAM= What do you want to do?: 
 if /i "%PROGRAM%"=="enter" goto :enter
 if /i "%PROGRAM%"=="logs" goto :logs
 if /i "%PROGRAM%"=="colors" goto :colors
