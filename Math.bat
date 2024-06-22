@@ -6,7 +6,7 @@ echo Welcome to MamacOs-maths
 echo make a equation of five to enter the main file
 
 :start
-set /p MATH=Equation?
+set /p %MATH%=Equation?
 set /a RESULT= %MATH%
 echo %RESULT%
 if %RESULT%==5 goto :entry 

@@ -10,9 +10,10 @@ Our teams name is based on the OS, the team name is MamaCode Studios.
 # Updates
 - v0.1.2 Update!
 - code_info command added.
-- Menu file updated. 
-- Logs command in the menu file updated. 
+- Menu files outdated commands updated. 
+- Logs command in the O.S files updated. 
 - Main file updated. 
+- Minor bugs fixed.
 
 # Current Status
 v0.1.2 Update is here! a "neofetch" alike command and a code information command added, version is stable,

@@ -135,7 +135,7 @@ cls
 goto :start
 
 :version_control
-echo The version is v0.1.1
+echo The version is v0.1.2
 pause > nul
 cls
 goto :start
@@ -196,7 +196,7 @@ cls
 echo     MM     MM          CCC       OOOOOO     SSSSS     Name: MamacOS
 echo    MM MM MM MM       CCC       OOO    OOO  SS         User: %USERNAME%
 echo   MM   MM    MM      CCC       OOO    OOO    SSSS     Creator: MamaCode Studios
-echo  MM           MM     CCC       OOO    OOO       SS    Current Version: v0.1.1
+echo  MM           MM     CCC       OOO    OOO       SS    Current Version: v0.1.2
 echo MM             MM  O   CCC       OOOOOO     SSSSS     Current File: Ders.bat
 pause > nul
 cls

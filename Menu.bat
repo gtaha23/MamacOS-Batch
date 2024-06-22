@@ -1,5 +1,5 @@
 @echo off
-title MamacOS
+title MamacOS-menu
 color 1F
 cls
 
@@ -13,7 +13,7 @@ echo - about (About the creator)
 echo - logs (about the updates)
 echo - colors (gives you info about colors)
 echo - see (shows the files)
-echo - version_control (checs the version)
+echo - version_control (checks the version)
 echo - oldfetch (a command that shows you the logo and the info of the OS)
 echo -------------------------
 set /p PROGRAM= What do you want to do?:
@@ -168,7 +168,7 @@ goto :start
 
 :version_control
 cls
-echo The version is v0.0.9
+echo The version is v0.1.2
 pause > nul
 goto :start
 
@@ -177,7 +177,7 @@ cls
 echo     MM     MM          CCC       OOOOOO     SSSSS     Name: MamacOS
 echo    MM MM MM MM       CCC       OOO    OOO  SS         User: %USERNAME%
 echo   MM   MM    MM      CCC       OOO    OOO    SSSS     Creator: MamaCode Studios
-echo  MM           MM     CCC       OOO    OOO       SS    Current Version: v0.1.1
+echo  MM           MM     CCC       OOO    OOO       SS    Current Version: v0.1.2
 echo MM             MM  O   CCC       OOOOOO     SSSSS     Current File: Menu.bat
 pause > nul
 cls
