@@ -33,8 +33,9 @@ echo - version_control (checks the version)
 echo - see (shows the files)
 echo - exit (exits the O.S)
 echo - about (gives info about the creator team)
-echo - github_repo (givesyou the repository link)
+echo - github_repo (gives you the repository link)
 echo - oldfetch (a command that shows you the logo and the info of the OS)
+echo - code_info (gives you information of the source code)
 set /p PROGRAM= What do you want to do?:
 if /i "%PROGRAM%"=="enter" goto :enter
 if /i "%PROGRAM%"=="logs" goto :logs
@@ -46,6 +47,7 @@ if /i "%PROGRAM%"=="exit" goto :exit
 if /i "%PROGRAM%"=="about" goto :about
 if /i "%PROGRAM%"=="github_repo" goto :github_repo
 if /i "%PROGRAM%"=="oldfetch" goto :oldfetch
+if /i "%PROGRAM%"=="code_info" goto :code_info
 echo Invalid command. Please try again.
 pause > nul
 cls
@@ -94,6 +96,8 @@ ping localhost -n 2 > nul
 echo v0.1.0 / 17.06.2024 \
 ping localhost -n 2 > nul
 echo v0.1.1 / 22.06.2024 \
+ping localhost -n 2 > nul
+echo v0.1.2 / 22.06.2024 \
 ping localhost -n 2 > nul
 echo -----------
 pause > nul
@@ -194,6 +198,34 @@ echo    MM MM MM MM       CCC       OOO    OOO  SS         User: %USERNAME%
 echo   MM   MM    MM      CCC       OOO    OOO    SSSS     Creator: MamaCode Studios
 echo  MM           MM     CCC       OOO    OOO       SS    Current Version: v0.1.1
 echo MM             MM  O   CCC       OOOOOO     SSSSS     Current File: Ders.bat
+pause > nul
+cls
+goto :start
+
+:code_info
+cls
+echo --------------------------
+echo This O.S is built with batchfile in MS Windows 11,
+ping localhost -n 2 > nul
+echo it is currently on moderation. The main developer of this project is Taha.
+ping localhost -n 2 > nul
+echo The co-founder of MamaCode Studios A.K.A Akay Tuna is currently dealing with some problems so
+ping localhost -n 2 > nul
+echo Taha is building this project with batchfile programming language.
+echo.
+echo Here is some batchfile snippets:
+ping localhost -n 3 > nul
+echo ______________
+echo @echo off
+echo color the_color
+echo title the_title
+echo :blah_blah
+echo set /p variable_name= data
+echo pause
+echo.
+echo goto :blah_blah
+echo ______________
+echo Thanks for using MamacOS!
 pause > nul
 cls
 goto :start
