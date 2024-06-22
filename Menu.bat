@@ -14,6 +14,7 @@ echo - logs (about the updates)
 echo - colors (gives you info about colors)
 echo - see (shows the files)
 echo - version_control (checs the version)
+echo - oldfetch (a command that shows you the logo and the info of the OS)
 echo -------------------------
 set /p PROGRAM= What do you want to do?:
 if /i "%PROGRAM%"=="enter" goto :enter
@@ -24,6 +25,7 @@ if /i "%PROGRAM%"=="version_control" goto :version_control
 if /i "%PROGRAM%"=="see" goto :see
 if /i "%PROGRAM%"=="exit" goto :exit
 if /i "%PROGRAM%"=="about" goto :about
+if /i "%PROGRAM%"=="oldfetch" goto :oldfetch
 echo Invalid command. Please try again.
 pause > nul
 cls
@@ -121,6 +123,8 @@ echo v0.0.9 / 15.06.2024 \
 ping localhost -n 2 > nul
 echo v0.1.0 / 17.06.2024 \
 ping localhost -n 2 > nul
+echo v0.1.1 / 22.06.2024 \
+ping localhost -n 2 > nul
 echo -----------
 pause > nul
 cls
@@ -164,4 +168,15 @@ goto :start
 cls
 echo The version is v0.0.9
 pause > nul
+goto :start
+
+:oldfetch
+cls
+echo     MM     MM          CCC       OOOOOO     SSSSS     Name: MamacOS
+echo    MM MM MM MM       CCC       OOO    OOO  SS         User: %USERNAME%
+echo   MM   MM    MM      CCC       OOO    OOO    SSSS     Creator: MamaCode Studios
+echo  MM           MM     CCC       OOO    OOO       SS    Current Version: v0.1.1
+echo MM             MM  O   CCC       OOOOOO     SSSSS     Current File: Menu.bat
+pause > nul
+cls
 goto :start

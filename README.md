@@ -7,14 +7,14 @@ You can download the code and try it yourself!
 Me and my cousin decided to make this project on 13/06/2024! I was originally started this project 2 months ago.
 
 # Updates
-- v0.1.0 Update!
-- v0.1. Series release!
-- Startup file added. 
+- v0.1.1 Update!
+- oldfetch command added.
+- Menu file updated. 
 - Logs command in the menu file updated. 
 - Main file updated. 
 
 # Current Status
-v0.1.0 Update is here! v0.1. series are released, version is stable,
+v0.1.1 Update is here! v0.1. series are released, version is stable,
 new releases will be publish soon.
 
 # Fun facts

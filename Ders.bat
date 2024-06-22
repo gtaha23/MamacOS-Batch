@@ -34,6 +34,7 @@ echo - see (shows the files)
 echo - exit (exits the O.S)
 echo - about (gives info about the creator team)
 echo - github_repo (givesyou the repository link)
+echo - oldfetch (a command that shows you the logo and the info of the OS)
 set /p PROGRAM= What do you want to do?:
 if /i "%PROGRAM%"=="enter" goto :enter
 if /i "%PROGRAM%"=="logs" goto :logs
@@ -44,6 +45,7 @@ if /i "%PROGRAM%"=="see" goto :see
 if /i "%PROGRAM%"=="exit" goto :exit
 if /i "%PROGRAM%"=="about" goto :about
 if /i "%PROGRAM%"=="github_repo" goto :github_repo
+if /i "%PROGRAM%"=="oldfetch" goto :oldfetch
 echo Invalid command. Please try again.
 pause > nul
 cls
@@ -69,7 +71,7 @@ cls
 echo This command shows you the updates 
 ping localhost -n 2 > nul
 echo -----------
-echo First Creation / 19.04.2024 
+echo First Creation / 19.04.2024 \
 ping localhost -n 2 > nul
 echo v0.0.1 / 21.04.2024 \
 ping localhost -n 2 > nul 
@@ -90,6 +92,8 @@ ping localhost -n 2 > nul
 echo v0.0.9 / 15.06.2024 \
 ping localhost -n 2 > nul
 echo v0.1.0 / 17.06.2024 \
+ping localhost -n 2 > nul
+echo v0.1.1 / 22.06.2024 \
 ping localhost -n 2 > nul
 echo -----------
 pause > nul
@@ -127,7 +131,7 @@ cls
 goto :start
 
 :version_control
-echo The version is v0.0.9
+echo The version is v0.1.1
 pause > nul
 cls
 goto :start
@@ -181,4 +185,15 @@ echo https://github.com/gtaha23/MamacOS-Batch
 echo.
 pause > nul
 cls 
+goto :start
+
+:oldfetch
+cls
+echo     MM     MM          CCC       OOOOOO     SSSSS     Name: MamacOS
+echo    MM MM MM MM       CCC       OOO    OOO  SS         User: %USERNAME%
+echo   MM   MM    MM      CCC       OOO    OOO    SSSS     Creator: MamaCode Studios
+echo  MM           MM     CCC       OOO    OOO       SS    Current Version: v0.1.1
+echo MM             MM  O   CCC       OOOOOO     SSSSS     Current File: Ders.bat
+pause > nul
+cls
 goto :start
