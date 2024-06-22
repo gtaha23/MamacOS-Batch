@@ -16,7 +16,7 @@ echo - see (shows the files)
 echo - version_control (checks the version)
 echo - oldfetch (a command that shows you the logo and the info of the OS)
 echo -------------------------
-set /p PROGRAM= What do you want to do?:
+set /p PROGRAM= What do you want to do?: 
 if /i "%PROGRAM%"=="enter" goto :enter
 if /i "%PROGRAM%"=="logs" goto :logs
 if /i "%PROGRAM%"=="colors" goto :colors
