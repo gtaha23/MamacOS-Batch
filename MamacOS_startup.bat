@@ -6,6 +6,12 @@ color 1F
 echo Looking for the OS, please wait. . .
 ping localhost -n 5 > nul
 if exist Ders.bat (
+    echo OS found, starting.
+    ping localhost -n 2 > nul
+    cls
+    echo OS found, starting. .
+    ping localhost -n 2 > nul
+    cls
     echo OS found, starting. . .
     ping localhost -n 3 > nul
     call Ders.bat
@@ -13,5 +19,6 @@ if exist Ders.bat (
 else (
     echo OS not found :d
     echo To download the OS visit the github repository.
+    echo https:/www.github.com/gtaha23/MamacOS-Batch
 )
 pause
