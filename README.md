@@ -14,6 +14,10 @@ Our teams name is based on the OS, the team name is MamaCode Studios.
 - Logs command in the O.S files updated. 
 - Main file updated. 
 - Minor bugs fixed.
+- Image added to README.md!
+
+# Prewiew
+The "OS" or the scripts only needs 20 KB of storage so you can test it with ease. Here is the oldfetch command from the "OS" ![MamacOS-resim](https://github.com/gtaha23/MamacOS-Batch/assets/159329966/9169fef7-8c39-4ea8-8349-ef6f08bb1264)
 
 # Current Status
 v0.1.4 Update is here! a pwd command for menu and a O.S information command added, version is stable,
