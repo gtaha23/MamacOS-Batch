@@ -8,15 +8,15 @@ Me and my cousin decided to make this project on 13/06/2024! I was originally st
 Our teams name is based on the OS, the team name is MamaCode Studios.
 
 # Updates
-- v0.1.3 Update!
-- about_os command added.
-- A new command for the menu is added. 
+- v0.1.4 Update!
+- Menu file updated.
+- Fullscreen command optimized. 
 - Logs command in the O.S files updated. 
 - Main file updated. 
 - Minor bugs fixed.
 
 # Current Status
-v0.1.3 Update is here! a pwd command for menu and a O.S information command added, version is stable,
+v0.1.4 Update is here! a pwd command for menu and a O.S information command added, version is stable,
 new releases will be publish soon.
 
 # Fun facts
