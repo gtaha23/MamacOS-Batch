@@ -168,7 +168,7 @@ goto :start
 :exit
 echo Exiting the OS. . .
 ping localhost -n 3 > nul
-exit /b
+exit 
 
 :about
 echo This menu is a control panel for MamacOS systems
