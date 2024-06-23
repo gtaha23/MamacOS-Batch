@@ -1,7 +1,7 @@
 
 # MamacOS
 MamacOS is a fun little project for my batch skills. This is currently on moderation,
-You can download the code and try it yourself! It is an Open-source projects of script programs that thinks it is an "OS".
+You can download the code and try it yourself! It is an Open-source project of script programs that thinks it is an "OS".
 
 # Team
 Me and my cousin decided to make this project on 13/06/2024! I was originally started this project 2 months ago.
