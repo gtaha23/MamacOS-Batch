@@ -36,6 +36,7 @@ echo - about (gives info about the creator team)
 echo - github_repo (gives you the repository link)
 echo - oldfetch (a command that shows you the logo and the info of the OS)
 echo - code_info (gives you information of the source code)
+echo - about_os (gives you information about Operating systems)
 set /p PROGRAM= What do you want to do?: 
 if /i "%PROGRAM%"=="enter" goto :enter
 if /i "%PROGRAM%"=="logs" goto :logs
@@ -48,6 +49,7 @@ if /i "%PROGRAM%"=="about" goto :about
 if /i "%PROGRAM%"=="github_repo" goto :github_repo
 if /i "%PROGRAM%"=="oldfetch" goto :oldfetch
 if /i "%PROGRAM%"=="code_info" goto :code_info
+if /i "%PROGRAM%"=="about_os" goto :about_os
 echo Invalid command. Please try again.
 pause > nul
 cls
@@ -63,7 +65,7 @@ goto :start
 
 :file
 cls
-echo Entering the menu
+echo Entering the menu. . .
 ping localhost -n 2 > nul
 start Menu.bat
 goto :start
@@ -98,6 +100,8 @@ ping localhost -n 2 > nul
 echo v0.1.1 / 22.06.2024 \
 ping localhost -n 2 > nul
 echo v0.1.2 / 22.06.2024 \
+ping localhost -n 2 > nul
+echo v0.1.3 / 23.06.2024 \
 ping localhost -n 2 > nul
 echo -----------
 pause > nul
@@ -135,7 +139,7 @@ cls
 goto :start
 
 :version_control
-echo The version is v0.1.2
+echo The version is v0.1.3
 pause > nul
 cls
 goto :start
@@ -146,6 +150,8 @@ echo -----------------------
 echo Extras (folder)
 ping localhost -n 2 > nul
 echo Ders.bat 
+ping localhost -n 2 > nul
+echo MamacOS_startup.bat
 ping localhost -n 2 > nul
 echo Math.bat 
 ping localhost -n 2 > nul
@@ -196,7 +202,7 @@ cls
 echo     MM     MM          CCC       OOOOOO     SSSSS     Name: MamacOS
 echo    MM MM MM MM       CCC       OOO    OOO  SS         User: %USERNAME%
 echo   MM   MM    MM      CCC       OOO    OOO    SSSS     Creator: MamaCode Studios
-echo  MM           MM     CCC       OOO    OOO       SS    Current Version: v0.1.2
+echo  MM           MM     CCC       OOO    OOO       SS    Current Version: v0.1.3
 echo MM             MM  O   CCC       OOOOOO     SSSSS     Current File: Ders.bat
 pause > nul
 cls
@@ -229,3 +235,29 @@ echo Thanks for using MamacOS!
 pause > nul
 cls
 goto :start
+
+:about_os
+cls
+echo 1- What is an O.S?
+ping localhost -n 2 > nul
+echo 2- Examples of Operating systems
+ping localhost -n 2 > nul
+echo 3- How can you create one?
+ping localhost -n 2 > nul
+echo 4- Is MamacOS a real O.S?
+ping localhost -n 2 > nul
+echo 5- exit
+set /p ANS= choose one (1/2/3/4/5): 
+echo.
+if /i "%ANS%"=="1" echo An operating system aka OS is system software that manages computer hardware and software resources, and provides common services for computer programs.
+if /i "%ANS%"=="2" echo Examples of Operating systems: Linux, Windows, macOS, Android,...
+if /i "%ANS%"=="3" echo You can create an OS with a programming language e.g C for a kernel, a GUI, a bootloader etc.
+if /i "%ANS%"=="4" echo Actually MamacOS is not an O.S, it is a CLI based script programs for Windows.
+if /i "%ANS%"=="5" (
+    pause
+    cls
+    goto :start
+)
+pause > nul
+cls
+goto :about_os

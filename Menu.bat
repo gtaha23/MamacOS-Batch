@@ -15,6 +15,7 @@ echo - colors (gives you info about colors)
 echo - see (shows the files)
 echo - version_control (checks the version)
 echo - oldfetch (a command that shows you the logo and the info of the OS)
+echo - pwd (prints currently working dir)
 echo -------------------------
 set /p PROGRAM= What do you want to do?: 
 if /i "%PROGRAM%"=="enter" goto :enter
@@ -26,6 +27,7 @@ if /i "%PROGRAM%"=="see" goto :see
 if /i "%PROGRAM%"=="exit" goto :exit
 if /i "%PROGRAM%"=="about" goto :about
 if /i "%PROGRAM%"=="oldfetch" goto :oldfetch
+if /i "%PROGRAM%"=="pwd" goto :pwd
 echo Invalid command. Please try again.
 pause > nul
 cls
@@ -127,6 +129,8 @@ echo v0.1.1 / 22.06.2024 \
 ping localhost -n 2 > nul
 echo v0.1.2 / 22.06.2024 \
 ping localhost -n 2 > nul
+echo v0.1.3 / 23.06.2024 \
+ping localhost -n 2 > nul
 echo -----------
 pause > nul
 cls
@@ -156,6 +160,8 @@ echo Extras (folder)
 ping localhost -n 2 > nul
 echo Ders.bat 
 ping localhost -n 2 > nul
+echo MamacOS_startup.bat
+ping localhost -n 2 > nul
 echo Math.bat 
 ping localhost -n 2 > nul
 echo Menu.bat 
@@ -168,7 +174,7 @@ goto :start
 
 :version_control
 cls
-echo The version is v0.1.2
+echo The version is v0.1.3
 pause > nul
 goto :start
 
@@ -177,8 +183,16 @@ cls
 echo     MM     MM          CCC       OOOOOO     SSSSS     Name: MamacOS
 echo    MM MM MM MM       CCC       OOO    OOO  SS         User: %USERNAME%
 echo   MM   MM    MM      CCC       OOO    OOO    SSSS     Creator: MamaCode Studios
-echo  MM           MM     CCC       OOO    OOO       SS    Current Version: v0.1.2
+echo  MM           MM     CCC       OOO    OOO       SS    Current Version: v0.1.3
 echo MM             MM  O   CCC       OOOOOO     SSSSS     Current File: Menu.bat
 pause > nul
 cls
+goto :start
+
+:pwd
+cls
+echo Current directory:
+cd 
+pause > nul
+cls 
 goto :start
