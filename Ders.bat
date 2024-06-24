@@ -146,7 +146,10 @@ cls
 goto :start
 
 :version_control
+cls
+echo *-------------------*
 echo The version is v0.1.5
+echo *-------------------*
 pause > nul
 cls
 goto :start
