@@ -37,6 +37,7 @@ echo - github_repo (gives you the repository link)
 echo - oldfetch (a command that shows you the logo and the info of the OS)
 echo - code_info (gives you information of the source code)
 echo - about_os (gives you information about Operating systems)
+echo - help (this command helps you with MamacOS)
 set /p PROGRAM= What do you want to do?: 
 if /i "%PROGRAM%"=="enter" goto :enter
 if /i "%PROGRAM%"=="logs" goto :logs
@@ -50,6 +51,7 @@ if /i "%PROGRAM%"=="github_repo" goto :github_repo
 if /i "%PROGRAM%"=="oldfetch" goto :oldfetch
 if /i "%PROGRAM%"=="code_info" goto :code_info
 if /i "%PROGRAM%"=="about_os" goto :about_os
+if /i "%PROGRAM%"=="help" goto :help
 echo Invalid command. Please try again.
 pause > nul
 cls
@@ -106,6 +108,8 @@ echo v0.1.3 / 23.06.2024 \
 ping localhost -n 2 > nul
 echo v0.1.4 / 23.06.2024 \
 ping localhost -n 2 > nul
+echo v0.1.5 / 24.06.2024 \
+ping localhost -n 2 > nul
 echo -----------
 pause > nul
 cls
@@ -142,7 +146,7 @@ cls
 goto :start
 
 :version_control
-echo The version is v0.1.4
+echo The version is v0.1.5
 pause > nul
 cls
 goto :start
@@ -202,10 +206,10 @@ goto :start
 
 :oldfetch
 cls
-echo     MM     MM          CCC       OOOOOO     SSSSS     Name: MamacOS
-echo    MM MM MM MM       CCC       OOO    OOO  SS         User: %USERNAME%
+echo     MM     MM          CCC       OOOOOO     SSSSS     OS Name: MamacOS
+echo    MM MM MM MM       CCC       OOO    OOO  SS         Username: %USERNAME%
 echo   MM   MM    MM      CCC       OOO    OOO    SSSS     Creator: MamaCode Studios
-echo  MM           MM     CCC       OOO    OOO       SS    Current Version: v0.1.4
+echo  MM           MM     CCC       OOO    OOO       SS    Current Version: v0.1.5
 echo MM             MM  O   CCC       OOOOOO     SSSSS     Current File: Ders.bat
 pause > nul
 cls
@@ -264,3 +268,32 @@ if /i "%ANS%"=="5" (
 pause > nul
 cls
 goto :about_os
+
+:help
+cls
+echo Hi! I am here to help you with MamacOS.
+echo Select the type of your issue:
+ping localhost -n 2 > nul
+echo 1- I dont understand MamacOS?
+ping localhost -n 2 > nul
+echo 2- What is happening when i run the fullscreen command?
+ping localhost -n 2 > nul
+echo 3- How can i update MamacOS to the latest version?
+ping localhost -n 2 > nul
+echo 4- How to use MamacOS?
+ping localhost -n 2 > nul
+echo 5- exit
+set /p OPTION= choose your problem (1/2/3/4/5): 
+echo.
+if /i "%OPTION%"=="1" echo MamacOS is a O.S that is CLI based, you can use the commands given in the start section.
+if /i "%OPTION%"=="2" echo In the fullscreen command the menu seem stuck but if you exit a random command it changes to fullscreen, Don't worry nothing harmful happens to your PC.
+if /i "%OPTION%"=="3" echo You can update via visiting the github repository, if you dont know the github repo, you can learn via github_repo command.
+if /i "%OPTION%"=="4" echo You can use MamacOS for learning terminal, get used to use commands via CMD, learn the basics of batchfile programming language etc.
+if /i "%OPTION%"=="5" (
+    pause
+    cls
+    goto :start
+)
+pause > nul
+cls
+goto :help
