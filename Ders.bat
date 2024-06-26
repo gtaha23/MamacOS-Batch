@@ -38,6 +38,7 @@ echo - oldfetch (a command that shows you the logo and the info of the OS)
 echo - code_info (gives you information of the source code)
 echo - about_os (gives you information about Operating systems)
 echo - help (this command helps you with MamacOS)
+echo - sys-info (Gives you the information about the system)
 set /p PROGRAM= What do you want to do?: 
 if /i "%PROGRAM%"=="enter" goto :enter
 if /i "%PROGRAM%"=="logs" goto :logs
@@ -52,6 +53,7 @@ if /i "%PROGRAM%"=="oldfetch" goto :oldfetch
 if /i "%PROGRAM%"=="code_info" goto :code_info
 if /i "%PROGRAM%"=="about_os" goto :about_os
 if /i "%PROGRAM%"=="help" goto :help
+if /i "%PROGRAM%"=="sys-info" goto :sys-info
 echo Invalid command. Please try again.
 pause > nul
 cls
@@ -110,6 +112,8 @@ echo v0.1.4 / 23.06.2024 \
 ping localhost -n 2 > nul
 echo v0.1.5 / 24.06.2024 \
 ping localhost -n 2 > nul
+echo v0.1.6 / 26.06.2024 \
+ping localhost -n 2 > nul
 echo -----------
 pause > nul
 cls
@@ -148,7 +152,7 @@ goto :start
 :version_control
 cls
 echo *-------------------*
-echo The version is v0.1.5
+echo The version is v0.1.6
 echo *-------------------*
 pause > nul
 cls
@@ -168,6 +172,8 @@ ping localhost -n 2 > nul
 echo Menu.bat 
 ping localhost -n 2 > nul
 echo README.md
+ping localhost -n 2 > nul
+echo sys-info.bat
 ping localhost -n 2 > nul
 echo test.txt
 echo -----------------------
@@ -212,7 +218,7 @@ cls
 echo     MM     MM          CCC       OOOOOO     SSSSS     OS Name: MamacOS
 echo    MM MM MM MM       CCC       OOO    OOO  SS         Username: %USERNAME%
 echo   MM   MM    MM      CCC       OOO    OOO    SSSS     Creator: MamaCode Studios
-echo  MM           MM     CCC       OOO    OOO       SS    Current Version: v0.1.5
+echo  MM           MM     CCC       OOO    OOO       SS    Current Version: v0.1.6
 echo MM             MM  O   CCC       OOOOOO     SSSSS     Current File: Ders.bat
 pause > nul
 cls
@@ -300,3 +306,14 @@ if /i "%OPTION%"=="5" (
 pause > nul
 cls
 goto :help
+
+:sys-info
+cls
+echo ------------------------------------------------------------------
+echo.
+echo Welcome %USERNAME%
+echo 1- See the system information
+echo 2- Exit
+set /p CEVAP= choose your option (1/2): 
+if /i "%CEVAP%"=="1" call sys-info.bat
+if /i "%CEVAP%"=="2" goto :start
