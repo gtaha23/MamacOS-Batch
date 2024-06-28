@@ -116,6 +116,8 @@ echo v0.1.5 / 24.06.2024 \
 ping localhost -n 2 > nul
 echo v0.1.6 / 26.06.2024 \
 ping localhost -n 2 > nul
+echo v0.1.7 / 26.06.2024 \
+ping localhost -n 2 > nul
 echo -----------
 pause > nul
 cls
