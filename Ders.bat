@@ -39,6 +39,7 @@ echo - code_info (gives you information of the source code)
 echo - about_os (gives you information about Operating systems)
 echo - help (this command helps you with MamacOS)
 echo - sys-info (Gives you the information about the system)
+echo - update (updates the Operating system)
 set /p PROGRAM= What do you want to do?: 
 if /i "%PROGRAM%"=="enter" goto :enter
 if /i "%PROGRAM%"=="logs" goto :logs
@@ -54,6 +55,7 @@ if /i "%PROGRAM%"=="code_info" goto :code_info
 if /i "%PROGRAM%"=="about_os" goto :about_os
 if /i "%PROGRAM%"=="help" goto :help
 if /i "%PROGRAM%"=="sys-info" goto :sys-info
+if /i "%PROGRAM%"=="update" goto :updater
 echo Invalid command. Please try again.
 pause > nul
 cls
@@ -152,7 +154,7 @@ goto :start
 :version_control
 cls
 echo *-------------------*
-echo The version is v0.1.6
+echo The version is v0.1.7
 echo *-------------------*
 pause > nul
 cls
@@ -162,6 +164,12 @@ goto :start
 echo The files are
 echo -----------------------
 echo Extras (folder)
+ping localhost -n 2 > nul
+echo        funi joke.txt
+ping localhost -n 2 > nul
+echo system (folder)
+ping localhost -n 2 > nul
+echo        updater.bat
 ping localhost -n 2 > nul
 echo Ders.bat 
 ping localhost -n 2 > nul
@@ -218,7 +226,7 @@ cls
 echo     MM     MM          CCC       OOOOOO     SSSSS     OS Name: MamacOS
 echo    MM MM MM MM       CCC       OOO    OOO  SS         Username: %USERNAME%
 echo   MM   MM    MM      CCC       OOO    OOO    SSSS     Creator: MamaCode Studios
-echo  MM           MM     CCC       OOO    OOO       SS    Current Version: v0.1.6
+echo  MM           MM     CCC       OOO    OOO       SS    Current Version: v0.1.7
 echo MM             MM  O   CCC       OOOOOO     SSSSS     Current File: Ders.bat
 pause > nul
 cls
@@ -317,3 +325,9 @@ echo 2- Exit
 set /p CEVAP= choose your option (1/2): 
 if /i "%CEVAP%"=="1" call sys-info.bat
 if /i "%CEVAP%"=="2" goto :start
+
+:updater
+cls
+echo Launching updater. . .
+ping localhost -n 3 > nul
+call system\updater.bat

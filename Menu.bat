@@ -137,6 +137,8 @@ echo v0.1.5 / 24.06.2024 \
 ping localhost -n 2 > nul
 echo v0.1.6 / 26.06.2024 \
 ping localhost -n 2 > nul
+echo v0.1.7 / 28.06.2024 \
+ping localhost -n 2 > nul
 echo -----------
 pause > nul
 cls
@@ -164,6 +166,12 @@ echo The files are
 echo -----------------------
 echo Extras (folder)
 ping localhost -n 2 > nul
+echo        funi joke.txt
+ping localhost -n 2 > nul
+echo system (folder)
+ping localhost -n 2 > nul
+echo        updater.bat
+ping localhost -n 2 > nul
 echo Ders.bat 
 ping localhost -n 2 > nul
 echo MamacOS_startup.bat
@@ -185,7 +193,7 @@ goto :start
 :version_control
 cls
 echo *-------------------*
-echo The version is v0.1.6
+echo The version is v0.1.7
 echo *-------------------*
 pause > nul
 cls
@@ -196,7 +204,7 @@ cls
 echo     MM     MM          CCC       OOOOOO     SSSSS     OS Name: MamacOS
 echo    MM MM MM MM       CCC       OOO    OOO  SS         Username: %USERNAME%
 echo   MM   MM    MM      CCC       OOO    OOO    SSSS     Creator: MamaCode Studios
-echo  MM           MM     CCC       OOO    OOO       SS    Current Version: v0.1.6
+echo  MM           MM     CCC       OOO    OOO       SS    Current Version: v0.1.7
 echo MM             MM  O   CCC       OOOOOO     SSSSS     Current File: Menu.bat
 pause > nul
 cls
