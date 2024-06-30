@@ -225,11 +225,11 @@ goto :start
 
 :oldfetch
 cls
-echo     MM     MM          CCC       OOOOOO     SSSSS     OS Name: MamacOS
-echo    MM MM MM MM       CCC       OOO    OOO  SS         Username: %USERNAME%
-echo   MM   MM    MM      CCC       OOO    OOO    SSSS     Creator: MamaCode Studios
-echo  MM           MM     CCC       OOO    OOO       SS    Current Version: v0.1.7
-echo MM             MM  O   CCC       OOOOOO     SSSSS     Current File: Ders.bat
+echo     MM     MM          CCCC      //     OOOOOO     SSSSS     OS Name: MamacOS
+echo    MM MM MM MM       CCCC       //    OOO    OOO  SS         Username: %USERNAME%
+echo   MM   MM    MM      CCCC      //     OOO    OOO    SSSS     Creator: MamaCode Studios
+echo  MM           MM     CCCC     //      OOO    OOO       SS    Current Version: v0.1.7
+echo MM             MM      CCCC  //         OOOOOO     SSSSS     Current File: Ders.bat
 pause > nul
 cls
 goto :start
