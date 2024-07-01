@@ -79,6 +79,7 @@ start Menu.bat
 cls
 goto :start
 
+rem Yeni versiyonu eklemeyi unutma!
 :logs
 cls
 echo This command shows you the updates 
@@ -159,6 +160,7 @@ pause
 cls
 goto :start
 
+rem Versiyonları değiştirmeyi unutma!
 :version_control
 cls
 echo *-------------------*
@@ -229,6 +231,7 @@ pause > nul
 cls 
 goto :start
 
+rem Versiyonları değiştirmeyi unutma!
 :oldfetch
 cls
 echo     MM     MM          CCCC      //     OOOOOO     SSSSS     OS Name: MamacOS
