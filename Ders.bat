@@ -40,6 +40,7 @@ echo - about_os (gives you information about Operating systems)
 echo - help (this command helps you with MamacOS)
 echo - sys-info (Gives you the information about the system)
 echo - update (updates the Operating system)
+echo - community (info about the community)
 set /p PROGRAM= What do you want to do?: 
 if /i "%PROGRAM%"=="enter" goto :enter
 if /i "%PROGRAM%"=="logs" goto :logs
@@ -56,6 +57,7 @@ if /i "%PROGRAM%"=="about_os" goto :about_os
 if /i "%PROGRAM%"=="help" goto :help
 if /i "%PROGRAM%"=="sys-info" goto :sys-info
 if /i "%PROGRAM%"=="update" goto :updater
+if /i "%PROGRAM%"=="community" goto :community
 echo Invalid command. Please try again.
 pause > nul
 cls
@@ -116,7 +118,11 @@ echo v0.1.5 / 24.06.2024 \
 ping localhost -n 2 > nul
 echo v0.1.6 / 26.06.2024 \
 ping localhost -n 2 > nul
-echo v0.1.7 / 26.06.2024 \
+echo v0.1.7 / 28.06.2024 \
+ping localhost -n 2 > nul
+echo v0.1.8 / 30.06.2024 \
+ping localhost -n 2 > nul
+echo v0.1.9 / 01.07.2024 \
 ping localhost -n 2 > nul
 echo -----------
 pause > nul
@@ -156,7 +162,7 @@ goto :start
 :version_control
 cls
 echo *-------------------*
-echo The version is v0.1.7
+echo The version is v0.1.9
 echo *-------------------*
 pause > nul
 cls
@@ -228,7 +234,7 @@ cls
 echo     MM     MM          CCCC      //     OOOOOO     SSSSS     OS Name: MamacOS
 echo    MM MM MM MM       CCCC       //    OOO    OOO  SS         Username: %USERNAME%
 echo   MM   MM    MM      CCCC      //     OOO    OOO    SSSS     Creator: MamaCode Studios
-echo  MM           MM     CCCC     //      OOO    OOO       SS    Current Version: v0.1.7
+echo  MM           MM     CCCC     //      OOO    OOO       SS    Current Version: v0.1.9
 echo MM             MM      CCCC  //         OOOOOO     SSSSS     Current File: Ders.bat
 pause > nul
 cls
@@ -325,6 +331,7 @@ echo Welcome %USERNAME%
 echo 1- See the system information
 echo 2- Exit
 set /p CEVAP= choose your option (1/2): 
+echo ------------------------------------------------------------------
 if /i "%CEVAP%"=="1" call sys-info.bat
 if /i "%CEVAP%"=="2" goto :start
 
@@ -333,3 +340,17 @@ cls
 echo Launching updater. . .
 ping localhost -n 3 > nul
 call system\updater.bat
+
+:community
+echo /*****************************************\
+echo The communitys are: 
+ping localhost -n 3 > nul
+echo Reddit: r/MamacOS
+ping localhost -n 2 > nul
+echo Discord: MamacOS-dc 
+ping localhost -n 2 > nul
+echo Check out later for updates!
+echo \*****************************************/
+pause
+cls
+goto :start

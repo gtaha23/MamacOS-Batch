@@ -8,18 +8,18 @@ Me and my cousin decided to make this project on 13/06/2024! I was originally st
 Our teams name is based on the OS, the team name is MamaCode Studios.
 
 # Updates
-- v0.1.8 Update!
+- v0.1.9 Update!
 - Menu file updated.
 - update command added. 
 - Logs command in the O.S files updated. 
 - Main file updated. 
 - Minor bugs fixed.
 - version_control commands updated!
-- Another preview from oldfetch added!
+- community command to Ders.bat added!
 
 # Prewiew
 The "OS" or the scripts only needs less 25 KB of storage so you can test it with ease. Here is the oldfetch command from the v0.1.4 "OS" (User variable is blurred by G. Taha) ![MamacOS-resim](https://github.com/gtaha23/MamacOS-Batch/assets/159329966/9169fef7-8c39-4ea8-8349-ef6f08bb1264)
-and another one one from v0.1.8 ![MamacOS](https://github.com/gtaha23/MamacOS-Batch/assets/159329966/f6b1ab8b-edfe-4451-b963-0ca0cbbc0cf0)
+and another one one from v0.1.8 (sorry for the version commands showing v0.1.7) ![MamacOS](https://github.com/gtaha23/MamacOS-Batch/assets/159329966/f6b1ab8b-edfe-4451-b963-0ca0cbbc0cf0)
 
 
 # Current Status
