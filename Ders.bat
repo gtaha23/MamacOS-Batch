@@ -41,6 +41,7 @@ echo - help (this command helps you with MamacOS)
 echo - sys-info (Gives you the information about the system)
 echo - update (updates the Operating system)
 echo - community (info about the community)
+echo - MamacBASIC (an small P.L)
 set /p PROGRAM= What do you want to do?: 
 if /i "%PROGRAM%"=="enter" goto :enter
 if /i "%PROGRAM%"=="logs" goto :logs
@@ -58,6 +59,7 @@ if /i "%PROGRAM%"=="help" goto :help
 if /i "%PROGRAM%"=="sys-info" goto :sys-info
 if /i "%PROGRAM%"=="update" goto :updater
 if /i "%PROGRAM%"=="community" goto :community
+if /i "%PROGRAM%"=="MamacBASIC" goto :MamacBASIC
 echo Invalid command. Please try again.
 pause > nul
 cls
@@ -79,7 +81,7 @@ start Menu.bat
 cls
 goto :start
 
-rem Yeni versiyonu eklemeyi unutma!
+:: Yeni versiyonu eklemeyi unutma!
 :logs
 cls
 echo This command shows you the updates 
@@ -125,6 +127,8 @@ echo v0.1.8 / 30.06.2024 \
 ping localhost -n 2 > nul
 echo v0.1.9 / 01.07.2024 \
 ping localhost -n 2 > nul
+echo v0.2.0 / 02.07.2024 \
+ping localhost -n 2 > nul
 echo -----------
 pause > nul
 cls
@@ -160,11 +164,11 @@ pause
 cls
 goto :start
 
-rem Versiyonları değiştirmeyi unutma!
+:: Versiyonları değiştirmeyi unutma!
 :version_control
 cls
 echo *-------------------*
-echo The version is v0.1.9
+echo The version is v0.2.0
 echo *-------------------*
 pause > nul
 cls
@@ -231,13 +235,13 @@ pause > nul
 cls 
 goto :start
 
-rem Versiyonları değiştirmeyi unutma!
+:: Versiyonları değiştirmeyi unutma!
 :oldfetch
 cls
 echo     MM     MM          CCCC      //     OOOOOO     SSSSS     OS Name: MamacOS
 echo    MM MM MM MM       CCCC       //    OOO    OOO  SS         Username: %USERNAME%
 echo   MM   MM    MM      CCCC      //     OOO    OOO    SSSS     Creator: MamaCode Studios
-echo  MM           MM     CCCC     //      OOO    OOO       SS    Current Version: v0.1.9
+echo  MM           MM     CCCC     //      OOO    OOO       SS    Current Version: v0.2.0
 echo MM             MM      CCCC  //         OOOOOO     SSSSS     Current File: Ders.bat
 pause > nul
 cls
@@ -354,6 +358,15 @@ echo Discord: MamacOS-dc
 ping localhost -n 2 > nul
 echo Check out later for updates!
 echo \*****************************************/
+pause
+cls
+goto :start
+
+:MamacBASIC
+cls
+echo Starting MamacBASIC Shell. . .
+ping localhost -n 3 > nul
+call system\MamacBASIC.bat
 pause
 cls
 goto :start

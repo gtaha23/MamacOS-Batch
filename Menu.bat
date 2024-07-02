@@ -98,7 +98,7 @@ pause
 cls
 goto :start
 
-rem Yeni versiyonu eklemeyi unutma
+:: Yeni versiyonu eklemeyi unutma
 :logs
 cls
 echo This command shows you the updates 
@@ -143,6 +143,8 @@ ping localhost -n 2 > nul
 echo v0.1.8 / 29.06.2024 \
 ping localhost -n 2 > nul
 echo v0.1.9 / 01.07.2024 \
+ping localhost -n 2 > nul
+echo v0.2.0 / 02.07.2024 \
 ping localhost -n 2 > nul
 echo -----------
 pause > nul
@@ -195,23 +197,23 @@ pause
 cls
 goto :start
 
-rem Versiyonları değiştirmeyi unutma
+:: Versiyonları değiştirmeyi unutma
 :version_control
 cls
 echo *-------------------*
-echo The version is v0.1.9
+echo The version is v0.2.0
 echo *-------------------*
 pause > nul
 cls
 goto :start
 
-rem Versiyonları değiştirmeyi unutma
+:: Versiyonları değiştirmeyi unutma
 :oldfetch
 cls
 echo     MM     MM          CCC       OOOOOO     SSSSS     OS Name: MamacOS
 echo    MM MM MM MM       CCC       OOO    OOO  SS         Username: %USERNAME%
 echo   MM   MM    MM      CCC       OOO    OOO    SSSS     Creator: MamaCode Studios
-echo  MM           MM     CCC       OOO    OOO       SS    Current Version: v0.1.9
+echo  MM           MM     CCC       OOO    OOO       SS    Current Version: v0.2.0
 echo MM             MM  O   CCC       OOOOOO     SSSSS     Current File: Menu.bat
 pause > nul
 cls
