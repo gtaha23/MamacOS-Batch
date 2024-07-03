@@ -18,6 +18,7 @@ echo - oldfetch (a command that shows you the logo and the info of the OS)
 echo - pwd (prints currently working dir)
 echo - github_repo (gives you the repository link)
 echo - stbl-v-chk (checks the last stable version)
+echo - exit (exits the O.S)
 echo -------------------------
 set /p PROGRAM= What do you want to do?: 
 if /i "%PROGRAM%"=="enter" goto :enter
@@ -32,6 +33,7 @@ if /i "%PROGRAM%"=="oldfetch" goto :oldfetch
 if /i "%PROGRAM%"=="pwd" goto :pwd
 if /i "%PROGRAM%"=="github_repo" goto :github_repo
 if /i "%PROGRAM%"=="stbl-v-chk" goto :stbl-v-chk
+if /i "%PROGRAM%"=="exit" goto :exit
 echo Invalid command. Please try again.
 pause > nul
 cls
@@ -156,6 +158,8 @@ echo v0.2.2 / 04.07.2024 \
 ping localhost -n 2 > nul
 echo v0.2.3 / 04.07.2024 \
 ping localhost -n 2 > nul
+echo v0.2.4 / 04.07.2024 \
+ping localhost -n 2 > nul
 echo -----------
 pause > nul
 cls
@@ -211,7 +215,7 @@ goto :start
 :version_control
 cls
 echo *-------------------*
-echo The version is v0.2.3
+echo The version is v0.2.4
 echo *-------------------*
 pause > nul
 cls
@@ -226,7 +230,7 @@ echo    MM MM MM MM       CCC       OOO    OOO  SS         Username: %USERNAME%
 ping localhost -n 2 > nul
 echo   MM   MM    MM      CCC       OOO    OOO    SSSS     Creator: MamaCode Studios
 ping localhost -n 2 > nul
-echo  MM           MM     CCC       OOO    OOO       SS    Current Version: v0.2.3
+echo  MM           MM     CCC       OOO    OOO       SS    Current Version: v0.2.4
 ping localhost -n 2 > nul
 echo MM             MM  O   CCC       OOOOOO     SSSSS     Current File: Menu.bat
 pause > nul
@@ -265,3 +269,10 @@ echo ********************************
 pause > nul
 cls
 goto :start
+
+:exit
+echo ******************
+echo Exiting the OS. . .
+echo ******************
+ping localhost -n 3 > nul
+exit 
