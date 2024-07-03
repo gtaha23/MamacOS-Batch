@@ -19,7 +19,7 @@ echo ******************************
 pause
 echo You can type -exit to return. 
 set /p KARAR= -= 
-if %KARAR%=="-exit" (
+if "%KARAR%"=="-exit" (
     echo exiting. . .
     ping localhost -n 2 > nul
     call Ders.bat
