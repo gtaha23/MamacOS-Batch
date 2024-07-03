@@ -8,7 +8,7 @@ Me and my cousin decided to make this project on 13/06/2024! I was originally st
 Our teams name is based on the OS, the team name is MamaCode Studios.
 
 # Updates
-- v0.2.1 Update!
+- v0.2.2 Update!
 - Menu file updated.
 - command-chk file added. 
 - Logs command in the O.S files updated. 
