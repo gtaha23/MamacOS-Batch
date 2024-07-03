@@ -150,6 +150,8 @@ echo v0.2.0 / 02.07.2024 \
 ping localhost -n 2 > nul
 echo v0.2.1 / 03.07.2024 \
 ping localhost -n 2 > nul
+echo v0.2.2 / 04.07.2024 \
+ping localhost -n 2 > nul
 echo -----------
 pause > nul
 cls
@@ -205,7 +207,7 @@ goto :start
 :version_control
 cls
 echo *-------------------*
-echo The version is v0.2.1
+echo The version is v0.2.2
 echo *-------------------*
 pause > nul
 cls
@@ -215,9 +217,13 @@ goto :start
 :oldfetch
 cls
 echo     MM     MM          CCC       OOOOOO     SSSSS     OS Name: MamacOS
+ping localhost -n 2 > nul
 echo    MM MM MM MM       CCC       OOO    OOO  SS         Username: %USERNAME%
+ping localhost -n 2 > nul
 echo   MM   MM    MM      CCC       OOO    OOO    SSSS     Creator: MamaCode Studios
-echo  MM           MM     CCC       OOO    OOO       SS    Current Version: v0.2.1
+ping localhost -n 2 > nul
+echo  MM           MM     CCC       OOO    OOO       SS    Current Version: v0.2.2
+ping localhost -n 2 > nul
 echo MM             MM  O   CCC       OOOOOO     SSSSS     Current File: Menu.bat
 pause > nul
 cls

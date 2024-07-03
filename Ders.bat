@@ -15,7 +15,7 @@ goto main
 echo Welcome to MamacOS
 ping localhost -n 3 > nul
 
-echo This Operating system is still on moderation
+echo This Operating systems last stable version: v0.2.2
 
 ping localhost -n 2 > nul
 goto :start
@@ -133,6 +133,8 @@ echo v0.2.0 / 02.07.2024 \
 ping localhost -n 2 > nul
 echo v0.2.1 / 03.07.2024 \
 ping localhost -n 2 > nul
+echo v0.2.2 / 04.07.2024 \
+ping localhost -n 2 > nul
 echo -----------
 pause > nul
 cls
@@ -172,7 +174,7 @@ goto :start
 :version_control
 cls
 echo *-------------------*
-echo The version is v0.2.1
+echo The version is v0.2.2
 echo *-------------------*
 pause > nul
 cls
@@ -247,9 +249,13 @@ goto :start
 :oldfetch
 cls
 echo     MM     MM          CCCC      //     OOOOOO     SSSSS     OS Name: MamacOS
+ping localhost -n 2 > nul
 echo    MM MM MM MM       CCCC       //    OOO    OOO  SS         Username: %USERNAME%
+ping localhost -n 2 > nul
 echo   MM   MM    MM      CCCC      //     OOO    OOO    SSSS     Creator: MamaCode Studios
-echo  MM           MM     CCCC     //      OOO    OOO       SS    Current Version: v0.2.1
+ping localhost -n 2 > nul
+echo  MM           MM     CCCC     //      OOO    OOO       SS    Current Version: v0.2.2
+ping localhost -n 2 > nul
 echo MM             MM      CCCC  //         OOOOOO     SSSSS     Current File: Ders.bat
 pause > nul
 cls
