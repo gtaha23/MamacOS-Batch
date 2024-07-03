@@ -15,7 +15,7 @@ goto main
 echo Welcome to MamacOS
 ping localhost -n 3 > nul
 
-echo This Operating systems last stable version: v0.2.2
+echo This Operating systems last stable version: v0.2.3
 
 ping localhost -n 2 > nul
 goto :start
@@ -135,6 +135,8 @@ echo v0.2.1 / 03.07.2024 \
 ping localhost -n 2 > nul
 echo v0.2.2 / 04.07.2024 \
 ping localhost -n 2 > nul
+echo v0.2.3 / 04.07.2024 \
+ping localhost -n 2 > nul
 echo -----------
 pause > nul
 cls
@@ -174,7 +176,7 @@ goto :start
 :version_control
 cls
 echo *-------------------*
-echo The version is v0.2.2
+echo The version is v0.2.3
 echo *-------------------*
 pause > nul
 cls
@@ -254,7 +256,7 @@ echo    MM MM MM MM       CCCC       //    OOO    OOO  SS         Username: %USE
 ping localhost -n 2 > nul
 echo   MM   MM    MM      CCCC      //     OOO    OOO    SSSS     Creator: MamaCode Studios
 ping localhost -n 2 > nul
-echo  MM           MM     CCCC     //      OOO    OOO       SS    Current Version: v0.2.2
+echo  MM           MM     CCCC     //      OOO    OOO       SS    Current Version: v0.2.3
 ping localhost -n 2 > nul
 echo MM             MM      CCCC  //         OOOOOO     SSSSS     Current File: Ders.bat
 pause > nul
