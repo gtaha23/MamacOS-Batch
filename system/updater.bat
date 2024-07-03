@@ -1,5 +1,5 @@
 @echo off
-title MamacOS-updater
+title MamacOS-system/updater
 color 1F
 
 :log

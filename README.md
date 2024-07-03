@@ -8,14 +8,14 @@ Me and my cousin decided to make this project on 13/06/2024! I was originally st
 Our teams name is based on the OS, the team name is MamaCode Studios.
 
 # Updates
-- v0.2.0 Update!
+- v0.2.1 Update!
 - Menu file updated.
-- MamacBASIC file added. 
+- command-chk file added. 
 - Logs command in the O.S files updated. 
 - Main file updated. 
 - Minor bugs fixed.
 - version_control commands updated!
-- MamacBASIC command to Ders.bat added!
+- command-check command to Ders.bat added!
 
 # Prewiew
 The "OS" or the scripts only needs less 25 KB of storage so you can test it with ease. Here is the oldfetch command from the v0.1.4 "OS" (User variable is blurred by G. Taha) ![MamacOS-resim](https://github.com/gtaha23/MamacOS-Batch/assets/159329966/9169fef7-8c39-4ea8-8349-ef6f08bb1264)

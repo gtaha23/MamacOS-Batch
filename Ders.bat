@@ -42,6 +42,7 @@ echo - sys-info (Gives you the information about the system)
 echo - update (updates the Operating system)
 echo - community (info about the community)
 echo - MamacBASIC (an small P.L)
+echo - command-check (checks on commands information)
 set /p PROGRAM= What do you want to do?: 
 if /i "%PROGRAM%"=="enter" goto :enter
 if /i "%PROGRAM%"=="logs" goto :logs
@@ -60,6 +61,7 @@ if /i "%PROGRAM%"=="sys-info" goto :sys-info
 if /i "%PROGRAM%"=="update" goto :updater
 if /i "%PROGRAM%"=="community" goto :community
 if /i "%PROGRAM%"=="MamacBASIC" goto :MamacBASIC
+if /i "%PROGRAM%"=="command-check" goto :command-chk
 echo Invalid command. Please try again.
 pause > nul
 cls
@@ -129,6 +131,8 @@ echo v0.1.9 / 01.07.2024 \
 ping localhost -n 2 > nul
 echo v0.2.0 / 02.07.2024 \
 ping localhost -n 2 > nul
+echo v0.2.1 / 03.07.2024 \
+ping localhost -n 2 > nul
 echo -----------
 pause > nul
 cls
@@ -168,7 +172,7 @@ goto :start
 :version_control
 cls
 echo *-------------------*
-echo The version is v0.2.0
+echo The version is v0.2.1
 echo *-------------------*
 pause > nul
 cls
@@ -182,6 +186,10 @@ ping localhost -n 2 > nul
 echo        funi joke.txt
 ping localhost -n 2 > nul
 echo system (folder)
+ping localhost -n 2 > nul
+echo        command-chk.bat
+ping localhost -n 2 > nul
+echo        MamacBASIC.bat
 ping localhost -n 2 > nul
 echo        updater.bat
 ping localhost -n 2 > nul
@@ -241,7 +249,7 @@ cls
 echo     MM     MM          CCCC      //     OOOOOO     SSSSS     OS Name: MamacOS
 echo    MM MM MM MM       CCCC       //    OOO    OOO  SS         Username: %USERNAME%
 echo   MM   MM    MM      CCCC      //     OOO    OOO    SSSS     Creator: MamaCode Studios
-echo  MM           MM     CCCC     //      OOO    OOO       SS    Current Version: v0.2.0
+echo  MM           MM     CCCC     //      OOO    OOO       SS    Current Version: v0.2.1
 echo MM             MM      CCCC  //         OOOOOO     SSSSS     Current File: Ders.bat
 pause > nul
 cls
@@ -314,14 +322,17 @@ echo 3- How can i update MamacOS to the latest version?
 ping localhost -n 2 > nul
 echo 4- How to use MamacOS?
 ping localhost -n 2 > nul
-echo 5- exit
-set /p OPTION= choose your problem (1/2/3/4/5): 
+echo 5- How to update MamacOS ?
+ping localhost -n 2 > nul
+echo 6- exit
+set /p OPTION= choose your problem (1/2/3/4/5/6): 
 echo.
 if /i "%OPTION%"=="1" echo MamacOS is a O.S that is CLI based, you can use the commands given in the start section.
 if /i "%OPTION%"=="2" echo In the fullscreen command the menu seem stuck but if you exit a random command it changes to fullscreen, Don't worry nothing harmful happens to your PC.
 if /i "%OPTION%"=="3" echo You can update via visiting the github repository, if you dont know the github repo, you can learn via github_repo command.
 if /i "%OPTION%"=="4" echo You can use MamacOS for learning terminal, get used to use commands via CMD, learn the basics of batchfile programming language etc.
-if /i "%OPTION%"=="5" (
+if /i "%OPTION%"=="5" echo You need to update your MamacOS to at least v0.1.7 to update it through MamacOS, otherwise you need to update manually vie the github repo.
+if /i "%OPTION%"=="6" (
     pause
     cls
     goto :start
@@ -344,9 +355,14 @@ if /i "%CEVAP%"=="2" goto :start
 
 :updater
 cls
+echo _____________________________
 echo Launching updater. . .
+echo _____________________________
 ping localhost -n 3 > nul
 call system\updater.bat
+pause 
+cls 
+goto :start
 
 :community
 echo /*****************************************\
@@ -367,6 +383,15 @@ cls
 echo Starting MamacBASIC Shell. . .
 ping localhost -n 3 > nul
 call system\MamacBASIC.bat
+pause
+cls
+goto :start
+
+:command-chk
+cls
+echo Launching the command-chk process. . .
+ping localhost -n 3 > nul
+call system\command-chk.bat
 pause
 cls
 goto :start
