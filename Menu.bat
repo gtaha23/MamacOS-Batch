@@ -18,9 +18,12 @@ echo - oldfetch (a command that shows you the logo and the info of the OS)
 echo - pwd (prints currently working dir)
 echo - github_repo (gives you the repository link)
 echo - stbl-v-chk (checks the last stable version)
+echo - user-counter (checks the users using MamacOS)
 echo - exit (exits the O.S)
 echo -------------------------
 set /p PROGRAM= What do you want to do?: 
+if /i "%PROGRAM%"=="create" goto :create
+if /i "%PROGRAM%"=="check" goto :check
 if /i "%PROGRAM%"=="enter" goto :enter
 if /i "%PROGRAM%"=="logs" goto :logs
 if /i "%PROGRAM%"=="colors" goto :colors
@@ -33,6 +36,7 @@ if /i "%PROGRAM%"=="oldfetch" goto :oldfetch
 if /i "%PROGRAM%"=="pwd" goto :pwd
 if /i "%PROGRAM%"=="github_repo" goto :github_repo
 if /i "%PROGRAM%"=="stbl-v-chk" goto :stbl-v-chk
+if /i "%PROGRAM%"=="user-counter" goto :user-counter
 if /i "%PROGRAM%"=="exit" goto :exit
 echo Invalid command. Please try again.
 pause > nul
@@ -160,6 +164,8 @@ echo v0.2.3 / 04.07.2024 \
 ping localhost -n 2 > nul
 echo v0.2.4 / 04.07.2024 \
 ping localhost -n 2 > nul
+echo v0.2.5 / 05.07.2024 \
+ping localhost -n 2 > nul
 echo -----------
 pause > nul
 cls
@@ -215,7 +221,7 @@ goto :start
 :version_control
 cls
 echo *-------------------*
-echo The version is v0.2.4
+echo The version is v0.2.5
 echo *-------------------*
 pause > nul
 cls
@@ -224,15 +230,15 @@ goto :start
 :: Versiyonları değiştirmeyi unutma
 :oldfetch
 cls
-echo     MM     MM          CCC       OOOOOO     SSSSS     OS Name: MamacOS
+echo     MM     MM          CCCC      //     OOOOOO     SSSSS     OS Name: MamacOS
 ping localhost -n 2 > nul
-echo    MM MM MM MM       CCC       OOO    OOO  SS         Username: %USERNAME%
+echo    MM MM MM MM       CCCC       //    OOO    OOO  SS         Username: %USERNAME%
 ping localhost -n 2 > nul
-echo   MM   MM    MM      CCC       OOO    OOO    SSSS     Creator: MamaCode Studios
+echo   MM   MM    MM      CCCC      //     OOO    OOO    SSSS     Creator: MamaCode Studios
 ping localhost -n 2 > nul
-echo  MM           MM     CCC       OOO    OOO       SS    Current Version: v0.2.4
+echo  MM           MM     CCCC     //      OOO    OOO       SS    Current Version: v0.2.5
 ping localhost -n 2 > nul
-echo MM             MM  O   CCC       OOOOOO     SSSSS     Current File: Menu.bat
+echo MM             MM      CCCC  //         OOOOOO     SSSSS     Current File: Menu.bat
 pause > nul
 cls
 goto :start
@@ -276,3 +282,21 @@ echo Exiting the OS. . .
 echo ******************
 ping localhost -n 3 > nul
 exit 
+
+:user-counter
+cls
+echo *****************************
+echo Users online:
+ping localhost -n 2 > nul
+echo - 3
+ping localhost -n 2 > nul
+echo Online users version:
+ping localhost -n 2 > nul
+echo - 1 v0.2.5 (G. Taha)
+echo - 1 v0.2.4 
+echo - 1 v0.0.9 (Akay Tuna)
+ping localhost -n 2 > nul
+echo ****************************
+pause
+cls
+goto :start
