@@ -24,7 +24,7 @@ echo -------------------------
 set /p PROGRAM= What do you want to do?: 
 if /i "%PROGRAM%"=="create" goto :create
 if /i "%PROGRAM%"=="check" goto :check
-if /i "%PROGRAM%"=="enter" goto :enter
+if /i "%PROGRAM%"=="entry" goto :entry
 if /i "%PROGRAM%"=="logs" goto :logs
 if /i "%PROGRAM%"=="colors" goto :colors
 if /i "%PROGRAM%"=="fullscreen" goto :fullscreen
@@ -89,7 +89,7 @@ pause
 :mainfile
 cls
 echo ********************
-echo Exiting. . .
+echo Entering the main file. . .
 echo ********************
 ping localhost -n 3 > nul
 call Ders.bat
@@ -171,6 +171,8 @@ echo v0.2.5 / 05.07.2024 \
 ping localhost -n 2 > nul
 echo v0.2.6 / 05.07.2024 \
 ping localhost -n 2 > nul
+echo v0.2.7 / 05.07.2024 \
+ping localhost -n 2 > nul
 echo -----------
 pause > nul
 cls
@@ -226,7 +228,7 @@ goto :start
 :version_control
 cls
 echo *-------------------*
-echo The version is v0.2.6
+echo The version is v0.2.7
 echo *-------------------*
 pause > nul
 cls
@@ -241,7 +243,7 @@ echo    MM MM MM MM       CCCC       //    OOO    OOO  SS         Username: %USE
 ping localhost -n 2 > nul
 echo   MM   MM    MM      CCCC      //     OOO    OOO    SSSS     Creator: MamaCode Studios
 ping localhost -n 2 > nul
-echo  MM           MM     CCCC     //      OOO    OOO       SS    Current Version: v0.2.6
+echo  MM           MM     CCCC     //      OOO    OOO       SS    Current Version: v0.2.7
 ping localhost -n 2 > nul
 echo MM             MM      CCCC  //         OOOOOO     SSSSS     Current File: Menu.bat
 pause > nul
