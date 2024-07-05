@@ -1,6 +1,7 @@
 @echo off
 title MamacOS
 color 1F
+setlocal EnableDelayedExpansion
 cls
 
 echo   --------------------------
@@ -15,7 +16,7 @@ goto main
 echo Welcome to MamacOS
 ping localhost -n 3 > nul
 
-echo This Operating systems last stable version: v0.2.5
+echo This Operating systems last stable version: v0.2.6
 
 ping localhost -n 2 > nul
 goto :start
@@ -71,15 +72,29 @@ pause > nul
 
 :enter
 set /p PASS= Enter the passcode to the menu: 
-set /a CODE=1357924680
-if %PASS%==%CODE% goto :file
+set CODE=1357924680
+if "!PASS!"=="!CODE!" (
+    goto :file
+) else (
+    echo Wrong! type 1 to try again or 0 to return
+    set /p SIFRE= :
+    if "!SIFRE!"=="1" (
+        goto :enter
+    ) else (
+        goto :start
+    )
+)
+pause
+cls
 goto :start
 
 :file
 cls
+echo **********************
 echo Entering the menu. . .
-ping localhost -n 2 > nul
-start Menu.bat
+echo **********************
+ping localhost -n 3 > nul
+call Menu.bat
 cls
 goto :start
 
@@ -141,6 +156,8 @@ echo v0.2.4 / 04.07.2024 \
 ping localhost -n 2 > nul
 echo v0.2.5 / 05.07.2024 \
 ping localhost -n 2 > nul
+echo v0.2.6 / 05.07.2024 \
+ping localhost -n 2 > nul
 echo -----------
 pause > nul
 cls
@@ -180,7 +197,7 @@ goto :start
 :version_control
 cls
 echo *-------------------*
-echo The version is v0.2.5
+echo The version is v0.2.6
 echo *-------------------*
 pause > nul
 cls
@@ -260,7 +277,7 @@ echo    MM MM MM MM       CCCC       //    OOO    OOO  SS         Username: %USE
 ping localhost -n 2 > nul
 echo   MM   MM    MM      CCCC      //     OOO    OOO    SSSS     Creator: MamaCode Studios
 ping localhost -n 2 > nul
-echo  MM           MM     CCCC     //      OOO    OOO       SS    Current Version: v0.2.5
+echo  MM           MM     CCCC     //      OOO    OOO       SS    Current Version: v0.2.6
 ping localhost -n 2 > nul
 echo MM             MM      CCCC  //         OOOOOO     SSSSS     Current File: Ders.bat
 pause > nul

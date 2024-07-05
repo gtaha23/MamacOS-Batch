@@ -87,9 +87,12 @@ if %ENTRYCODE%==%PASS% goto :mainfile
 pause
 
 :mainfile
-echo Entering the main file...
+cls
+echo ********************
+echo Exiting. . .
+echo ********************
 ping localhost -n 3 > nul
-start Ders.bat
+call Ders.bat
 
 :about
 echo This menu is a control panel for MamacOS systems
@@ -166,6 +169,8 @@ echo v0.2.4 / 04.07.2024 \
 ping localhost -n 2 > nul
 echo v0.2.5 / 05.07.2024 \
 ping localhost -n 2 > nul
+echo v0.2.6 / 05.07.2024 \
+ping localhost -n 2 > nul
 echo -----------
 pause > nul
 cls
@@ -221,7 +226,7 @@ goto :start
 :version_control
 cls
 echo *-------------------*
-echo The version is v0.2.5
+echo The version is v0.2.6
 echo *-------------------*
 pause > nul
 cls
@@ -236,7 +241,7 @@ echo    MM MM MM MM       CCCC       //    OOO    OOO  SS         Username: %USE
 ping localhost -n 2 > nul
 echo   MM   MM    MM      CCCC      //     OOO    OOO    SSSS     Creator: MamaCode Studios
 ping localhost -n 2 > nul
-echo  MM           MM     CCCC     //      OOO    OOO       SS    Current Version: v0.2.5
+echo  MM           MM     CCCC     //      OOO    OOO       SS    Current Version: v0.2.6
 ping localhost -n 2 > nul
 echo MM             MM      CCCC  //         OOOOOO     SSSSS     Current File: Menu.bat
 pause > nul
@@ -292,7 +297,7 @@ echo - 3
 ping localhost -n 2 > nul
 echo Online users version:
 ping localhost -n 2 > nul
-echo - 1 v0.2.5 (G. Taha)
+echo - 1 v0.2.6 (G. Taha)
 echo - 1 v0.2.4 
 echo - 1 v0.0.9 (Akay Tuna)
 ping localhost -n 2 > nul
