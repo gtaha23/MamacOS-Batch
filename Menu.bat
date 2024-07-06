@@ -173,6 +173,8 @@ echo v0.2.6 / 05.07.2024 \
 ping localhost -n 2 > nul
 echo v0.2.7 / 05.07.2024 \
 ping localhost -n 2 > nul
+echo v0.2.8 / 06.07.2024 \
+ping localhost -n 2 > nul
 echo -----------
 pause > nul
 cls
@@ -228,7 +230,7 @@ goto :start
 :version_control
 cls
 echo *-------------------*
-echo The version is v0.2.7
+echo The version is v0.2.8
 echo *-------------------*
 pause > nul
 cls
@@ -243,7 +245,7 @@ echo    MM MM MM MM       CCCC       //    OOO    OOO  SS         Username: %USE
 ping localhost -n 2 > nul
 echo   MM   MM    MM      CCCC      //     OOO    OOO    SSSS     Creator: MamaCode Studios
 ping localhost -n 2 > nul
-echo  MM           MM     CCCC     //      OOO    OOO       SS    Current Version: v0.2.7
+echo  MM           MM     CCCC     //      OOO    OOO       SS    Current Version: v0.2.8
 ping localhost -n 2 > nul
 echo MM             MM      CCCC  //         OOOOOO     SSSSS     Current File: Menu.bat
 pause > nul
@@ -276,7 +278,7 @@ cls
 echo ********************************
 echo The last stable version:
 ping localhost -n 2 > nul
-echo - v0.2.3
+echo - v0.2.8
 ping localhost -n 2 > nul
 echo ********************************
 pause > nul
