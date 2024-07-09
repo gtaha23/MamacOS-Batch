@@ -16,7 +16,7 @@ goto main
 echo Welcome to MamacOS
 ping localhost -n 3 > nul
 
-echo This Operating systems last stable version: v0.2.8
+echo This Operating systems last stable version: v0.2.9
 
 ping localhost -n 2 > nul
 goto :start

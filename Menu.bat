@@ -1,6 +1,7 @@
 @echo off
 title MamacOS-menu
 color 1F
+setlocal EnableDelayedExpansion
 cls
 
 :start
@@ -19,7 +20,7 @@ echo - pwd (prints currently working dir)
 echo - github_repo (gives you the repository link)
 echo - stbl-v-chk (checks the last stable version)
 echo - user-counter (checks the users using MamacOS)
-echo - macMAN (package manager)
+echo - macMAN (still in test) (package manager)
 echo - exit (exits the O.S)
 echo -------------------------
 set /p PROGRAM= What do you want to do?: 
@@ -316,7 +317,7 @@ cls
 goto :start
 
 :macMAN
-set macMANv=0.0.1 
+set macMANv=0.0.2 
 cls
 echo ************************** - macMAN - **************************
 echo.
@@ -331,7 +332,7 @@ if "!INP!"=="help" (
     echo Current macMAN version is %macMANv%
     echo ------------
     echo Commands:
-    echo - rmv (remove choice)
+    echo - rmv (removes choice)
     echo - add (download the wanted file)
     echo - list (list the packages)
     echo - hst (shows the last action)
@@ -341,53 +342,55 @@ if "!INP!"=="help" (
     cls
     goto :macMAN
 )
-if "!INP!"=="rmv" (
+else if "!INP!"=="rmv" (
     echo Package not typed!
     
-) else (
-    if "!INP!"=="rmv system" (
-        set /p SECENEK=are you sure? Y/N :
-        if "!SECENEK!"=="Y" (
-            del /f /q "MamacOS\system"
-        ) else (
-            echo Command stopped.
-            goto :macMAN
-        )
+) 
+else if "!INP!"=="rmv system" (
+    set /p SECENEK=are you sure? Y/N :
+    if "!SECENEK!"=="Y" (
+        del /f /q "MamacOS\system"
+    ) else (
+        echo Command stopped.
+        goto :macMAN
     )
-    if "!INP!"=="rmv Ders.bat" (
+)
+else if "!INP!"=="rmv Ders.bat" (
         echo Cannot delete the O.S !
         pause
         cls
         goto :macMAN
-    ) else (
-        echo Sorry for limiting your choice :c
-    )
+) 
+else if NOT "!INP!"=="rmv" & "!INP!"=="rmv system" & "!INP!"=="rmv Ders.bat"  (
+    echo Sorry for limiting your choice :c
 )
-if "!INP!"=="add" (
+
+else if "!INP!"=="add" (
     echo package not intended!
 ) else (
     if "!INP!"=="add system" (
         echo Adding system to MamacOS. . .
-        powershell -Command "(New-Object Net.WebClient).DownloadFile('https://github.com/gtaha23/MamacOS-Batch/blob/main/system/MamacBASIC.bat', 'MamacBASIC.bat')"
-        powershell -Command "(New-Object Net.WebClient).DownloadFile('https://github.com/gtaha23/MamacOS-Batch/blob/main/system/command-chk.bat', 'command-chk.bat')"
-        powershell -Command "(New-Object Net.WebClient).DownloadFile('https://github.com/gtaha23/MamacOS-Batch/blob/main/system/updater.bat', 'updater.bat')"
+        powershell -Command "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/gtaha23/MamacOS-Batch/blob/main/system/MamacBASIC.bat', 'MamacBASIC.bat')"
+        powershell -Command "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/gtaha23/MamacOS-Batch/blob/main/system/command-chk.bat', 'command-chk.bat')"
+        powershell -Command "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/gtaha23/MamacOS-Batch/blob/main/system/updater.bat', 'updater.bat')"
         ping localhost -n 3 > nul
         echo Process completed!
         pause
         cls
         goto :macMAN
     )
-    if "!INP!"=="add extras" (
+    else if "!INP!"=="add extras" (
         echo Adding the extras. . .
-        powershell -Command "(New-Object Net.WebClient).DownloadFile('https://github.com/gtaha23/MamacOS-Batch/blob/main/extras/funi_joke.txt', 'funi_joke.txt')"
+        powershell -Command "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/gtaha23/MamacOS-Batch/blob/main/extras/funi_joke.txt', 'funi_joke.txt')"
         ping localhost -n 2 > nul
         echo Process completed!
         pause
         cls
         goto :macMAN
-    ) else (
-        echo Sorry for limiting your choice :c
-    )
+    ) 
+else if NOT "!INP!"=="rmv" & "!INP!"=="rmv system" & "!INP!"=="rmv Ders.bat"  (
+    echo Sorry for limiting your choice :c
+)
 )
 if "!INP!"=="list" (
     echo The files that can be downloaded are,
@@ -400,14 +403,14 @@ if "!INP!"=="list" (
 ) else (
     echo Sorry for limiting your choice :c
 )
-if "!INP!"=="hst" (
+else if "!INP!"=="hst" (
     echo Last action:
     echo.
     echo %INP%
 ) else (
     echo Sorry for limiting your choice :c
 )
-if "!INP!"=="exit" (
+else if "!INP!"=="exit" (
     echo Exiting. . .
     ping localhost -n 2 > nul 
     cls
