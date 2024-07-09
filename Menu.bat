@@ -19,6 +19,7 @@ echo - pwd (prints currently working dir)
 echo - github_repo (gives you the repository link)
 echo - stbl-v-chk (checks the last stable version)
 echo - user-counter (checks the users using MamacOS)
+echo - macMAN (package manager)
 echo - exit (exits the O.S)
 echo -------------------------
 set /p PROGRAM= What do you want to do?: 
@@ -37,6 +38,7 @@ if /i "%PROGRAM%"=="pwd" goto :pwd
 if /i "%PROGRAM%"=="github_repo" goto :github_repo
 if /i "%PROGRAM%"=="stbl-v-chk" goto :stbl-v-chk
 if /i "%PROGRAM%"=="user-counter" goto :user-counter
+if /i "%PROGRAM%"=="macMAN" goto :macMAN
 if /i "%PROGRAM%"=="exit" goto :exit
 echo Invalid command. Please try again.
 pause > nul
@@ -175,6 +177,8 @@ echo v0.2.7 / 05.07.2024 \
 ping localhost -n 2 > nul
 echo v0.2.8 / 06.07.2024 \
 ping localhost -n 2 > nul
+echo v0.2.9 / 09.07.2024 \
+ping localhost -n 2 > nul
 echo -----------
 pause > nul
 cls
@@ -230,7 +234,7 @@ goto :start
 :version_control
 cls
 echo *-------------------*
-echo The version is v0.2.8
+echo The version is v0.2.9
 echo *-------------------*
 pause > nul
 cls
@@ -245,7 +249,7 @@ echo    MM MM MM MM       CCCC       //    OOO    OOO  SS         Username: %USE
 ping localhost -n 2 > nul
 echo   MM   MM    MM      CCCC      //     OOO    OOO    SSSS     Creator: MamaCode Studios
 ping localhost -n 2 > nul
-echo  MM           MM     CCCC     //      OOO    OOO       SS    Current Version: v0.2.8
+echo  MM           MM     CCCC     //      OOO    OOO       SS    Current Version: v0.2.9
 ping localhost -n 2 > nul
 echo MM             MM      CCCC  //         OOOOOO     SSSSS     Current File: Menu.bat
 pause > nul
@@ -279,6 +283,7 @@ echo ********************************
 echo The last stable version:
 ping localhost -n 2 > nul
 echo - v0.2.8
+echo -x v0.2.9 (still testing)
 ping localhost -n 2 > nul
 echo ********************************
 pause > nul
@@ -301,11 +306,113 @@ echo - 3
 ping localhost -n 2 > nul
 echo Online users version:
 ping localhost -n 2 > nul
-echo - 1 v0.2.6 (G. Taha)
+echo - 1 v0.2.9 (G. Taha)
 echo - 1 v0.2.4 
 echo - 1 v0.0.9 (Akay Tuna)
 ping localhost -n 2 > nul
 echo ****************************
 pause
+cls
+goto :start
+
+:macMAN
+set macMANv=0.0.1 
+cls
+echo ************************** - macMAN - **************************
+echo.
+echo Write help to see how to use macMAN 
+echo Sorry for the bugs :C
+echo.
+set /p INP= -= 
+echo.
+if "!INP!"=="help" (
+    echo.
+    echo macMAN is the packet manager for MamacOS 
+    echo Current macMAN version is %macMANv%
+    echo ------------
+    echo Commands:
+    echo - rmv (remove choice)
+    echo - add (download the wanted file)
+    echo - list (list the packages)
+    echo - hst (shows the last action)
+    echo - exit 
+    echo.
+    pause 
+    cls
+    goto :macMAN
+)
+if "!INP!"=="rmv" (
+    echo Package not typed!
+    
+) else (
+    if "!INP!"=="rmv system" (
+        set /p SECENEK=are you sure? Y/N :
+        if "!SECENEK!"=="Y" (
+            del /f /q "MamacOS\system"
+        ) else (
+            echo Command stopped.
+            goto :macMAN
+        )
+    )
+    if "!INP!"=="rmv Ders.bat" (
+        echo Cannot delete the O.S !
+        pause
+        cls
+        goto :macMAN
+    ) else (
+        echo Sorry for limiting your choice :c
+    )
+)
+if "!INP!"=="add" (
+    echo package not intended!
+) else (
+    if "!INP!"=="add system" (
+        echo Adding system to MamacOS. . .
+        powershell -Command "(New-Object Net.WebClient).DownloadFile('https://github.com/gtaha23/MamacOS-Batch/blob/main/system/MamacBASIC.bat', 'MamacBASIC.bat')"
+        powershell -Command "(New-Object Net.WebClient).DownloadFile('https://github.com/gtaha23/MamacOS-Batch/blob/main/system/command-chk.bat', 'command-chk.bat')"
+        powershell -Command "(New-Object Net.WebClient).DownloadFile('https://github.com/gtaha23/MamacOS-Batch/blob/main/system/updater.bat', 'updater.bat')"
+        ping localhost -n 3 > nul
+        echo Process completed!
+        pause
+        cls
+        goto :macMAN
+    )
+    if "!INP!"=="add extras" (
+        echo Adding the extras. . .
+        powershell -Command "(New-Object Net.WebClient).DownloadFile('https://github.com/gtaha23/MamacOS-Batch/blob/main/extras/funi_joke.txt', 'funi_joke.txt')"
+        ping localhost -n 2 > nul
+        echo Process completed!
+        pause
+        cls
+        goto :macMAN
+    ) else (
+        echo Sorry for limiting your choice :c
+    )
+)
+if "!INP!"=="list" (
+    echo The files that can be downloaded are,
+    echo.
+    echo funi_joke.txt
+    echo command-chk.bat
+    ping localhost -n 2 > nul
+    echo MamacBASIC.bat
+    echo updater.bat
+) else (
+    echo Sorry for limiting your choice :c
+)
+if "!INP!"=="hst" (
+    echo Last action:
+    echo.
+    echo %INP%
+) else (
+    echo Sorry for limiting your choice :c
+)
+if "!INP!"=="exit" (
+    echo Exiting. . .
+    ping localhost -n 2 > nul 
+    cls
+    goto :start
+)
+pause 
 cls
 goto :start

@@ -7,7 +7,7 @@ echo *********** Welcome ***********
 echo MamacOS commands info:
 echo 18 commands in the O.S
 ping localhost -n 2 > nul 
-echo 12 commands in the O.S menu
+echo 15 commands in the O.S menu
 ping localhost -n 2 > nul
 echo +10 commands different in each TUI based file
 ping localhost -n 2 > nul
